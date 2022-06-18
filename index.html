@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+    .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 6, 6, 0.5), rgba(255, 6, 6, 0.5)), url(images/bg-intro-desktop.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.flex{
+    display:flex;
+
+}
+.first-card{
+    background-color:   hsl(248, 32%, 49%);
+margin-top: 30px;
+ border:1px solid hsl(248, 32%, 49%);
+ width:450px;
+ border-radius: 5px;
+ margin-bottom: 20px;
+ color:white;
+ height:15px;
+ margin-left: 70px;
+ box-shadow: 0px 4px 3px rgba(34, 34, 34,0.4);
+ padding-bottom: 20px;
+
+
+}.first-card-p{
+    padding:0;
+    margin-left: 120px;
+    font-size: 10px;
+}
+.second-card{
+    border:1px solid white;
+    background-color: white;
+    width:450px;
+    height:420px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 3px rgba(34, 34, 34,0.4);
+    margin-left: 70px;
+
+}
+button{
+    border:1px solid hsl(154, 59%, 51%);
+cursor: pointer;
+    background-color:  hsl(154, 59%, 51%);
+    color:white;
+    border-radius:3px;
+    width:400px;
+    height:40px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+button:hover{
+    box-shadow: 2px 2px 3px  hsla(154, 41%, 40%, 0.774); 
+}
+.button-h3{
+  font-size: 14px;
+}
+
+input[type=text]{
+    border:1px solid grey;
+    width:360px;
+    height:40px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+#last{
+    margin-left: 40px;
+}
+input[type=email]{
+    border:1px solid grey;
+    width:360px;
+    height:40px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+input[type=password]{
+    border:1px solid grey;
+    width:360px;
+    height:40px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+h1{
+    color:white;
+    font-size: 40px;
+ margin: 0;
+    margin-left: 170px;
+}
+.first-h1{
+    margin-top: 170px;
+    margin-bottom: 0;
+
+}
+.second-h1{
+    margin-top: 0;
+}
+p{
+    color:white;
+    font-size: 16px;
+    margin-left: 170px;   
+}
+.second-card-p{
+    COLOR: hsl(246, 25%, 77%);
+    margin-left: 60px;
+    font-size:10px;
+}
+@media(max-width:375px){
+    html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        width:200%;
+        height:130vh;
+    }.first-h1{
+        margin-top: 10px;
+margin-left: 30px;
+    }
+    .second-h1{
+        margin-left: 30px;  
+    }
+    .p-one{
+font-size: 11px;
+margin-left: 16px;
+line-height: 1;
+
+
+
+    }
+    .first-card{
+        width:300px;
+        height: 30px;
+      margin-left: 30px;
+
+     
+    }
+    .first-card-p{
+        font-size: 12px;
+        position: relative;
+      right:20px;
+    }
+    .second-card{
+        margin-left: 30px;
+        width:300px;
+        height:430px;
+    }
+    input[type=text]{
+    width:230px;
+position: relative;
+right:13px;
+  
+}
+input[type=email]{
+    width:230px;
+    position: relative;
+right:13px;
+
+}
+input[type=password]{
+    width:230px;
+    position: relative;
+right:13px;
+
+}
+button{
+    width:230px;
+    position: relative;
+right:16px;
+}
+}
+    </style>
+</head>
+<body>
+    <section class="header">
+    <div class="flex">
+        <div>
+<h1 class="first-h1">Learn to code by</h1>
+<h1 class="second-h1">watching others</h1>
+
+<p class="p-one">See how experienced developers solve problems in real-time.</p>
+<p class="p-one">Watching scripted tutorials is great, but understanding how</p>
+<p class="p-one">developers think is invaluable.</p>
+        </div>
+        <div>
+ <div  class="first-card">
+                <p class="first-card-p"><strong>Try it free 7 days
+                   </strong>
+then $20/mo. thereafter
+                   </p>
+            </div>
+            <div class="second-card">
+                <form>
+                    <img style="position:relative;
+                  top:5px;left:380px;" src="images/icon-error.svg">
+                  <input type="text"  placeholder="First Name" name="name" required><br>
+                  
+                  <input id="last" type="text"  placeholder="Last Name" name="name"  required><br>
+                  <img style="position:relative;
+                  bottom:65px;left:380px;" src="images/icon-error.svg">
+                  <input type="email"  placeholder="Email Address" name="name"  required><br>
+                  <img style="position:relative;
+                  bottom:65px;left:380px;" src="images/icon-error.svg">
+                  <input type="password"  placeholder="Password" name="name"  required><br>
+                  <img style="position:relative;
+                  bottom:35px;left:380px;" src="images/icon-error.svg">
+                  <button><h3 class="button-h3">CLAIM YOUR FREE TRIAL</h3></button>
+                  <p class="second-card-p">By clicking the button, you are agreeing to our <STRONG STYLE="COLOR:hsl(0, 100%, 74%)"> Terms and services.</STRONG></h6>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
